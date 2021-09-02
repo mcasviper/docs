@@ -24,7 +24,7 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 ## Instructions
 
 > [!primary]
-> A failover IP cannot be moved from one zone to another. For example, an IP located in the SBGX data center can be moved to GRAX or RBXX, but cannot be moved to BHSX.
+> A failover IP cannot be moved from one zone to another. For example, an IP located in the SBG(X) data center can be moved to GRA(X) or RBX(X), but cannot be moved to BHS(X).
 >
 
 
