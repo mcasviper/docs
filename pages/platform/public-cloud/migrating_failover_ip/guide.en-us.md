@@ -7,7 +7,7 @@ section: Networking
 order: 10
 ---
 
-**Last updated 9th April 2020**
+**Last updated 3rd September 2021**
 
 ## Objective
 
@@ -22,6 +22,11 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
+
+> [!warning]
+>
+> A failover IP cannot be moved from one zone to another. For example, an IP located in the SBG(X) data center can be moved to GRA(X) or RBX(X), but cannot be moved to BHS(X).
+>
 
 First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select Failover IP in the “Network” section.
 In our example, a failover IP is routed to "Instance_A" and we want to redirect it towards "Instance_B".

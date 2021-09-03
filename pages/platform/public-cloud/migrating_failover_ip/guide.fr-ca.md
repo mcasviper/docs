@@ -6,7 +6,7 @@ section: 'Réseau'
 order: 12
 ---
 
-**Dernière mise à jour le 21/02/2020**
+**Dernière mise à jour le 03/09/2021**
 
 ## Objectif
 
@@ -21,6 +21,11 @@ Ce guide vous explique comment basculer une IP Failover d'une instance à une au
 - Une IP Failover
 
 ## En pratique 
+
+> [!warning]
+>
+> Une IP Fail Over ne peut pas être déplacée d’une zone à l’autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA(X) ou RBX(X) mais ne pourra pas être déplacée vers BHS(X).
+>
 
 ### Migration de l'IP Fail Over
 
