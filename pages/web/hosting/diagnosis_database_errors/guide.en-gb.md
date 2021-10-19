@@ -2,30 +2,30 @@
 title: Troubleshoot common database errors 
 excerpt: `Diagnose the most common cases of database errors`
 slug: database-frequent-errors
-Section . Diagnosis
-Order 4
+Section: Diagnosis
+Order: 4
 ---
 
-Last updated 16th August 2021
+**Last updated 8th October 2021**
 
-Objective**
+## Objective
 
-Your database usage may result in a number of anomalies on your website or [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), as well as on the interface [PhpMyAdmin](../create-database/#access-a-interface-phpmyadmin).
+Your database usage may result in a number of anomalies on your website or [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), as well as on the interface [PhpMyAdmin](../creating-database/#accessing-the-phpmyadmin-interface).
 
 **Find out how to troubleshoot database errors with OVHcloud web hosting plans.**
 
-Warning
+> [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-We have published this guide to assist you as much as we can with common tasks. We recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. OVH cannot assist you in this regard. You can find more information in the “Go further” section of this guide.
+> We have published this guide to assist you as much as we can with common tasks. We recommend contacting a specialist provider and/or getting in touch with the publisher of the interface or software if you encounter any difficulties. OVH cannot assist you in this regard. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
-Requirements
+## Requirements
 
-- You must have an OVHcloud [web hosting plan] (https://www.ovh.com/fr/hebergement-web/).
-https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr
-- Use one of our database offers [Web Cloud](https://www.ovh.com/fr/hebergement-web/options-sql.xml), [Private SQL](../getting started-with-private-sql/) or [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- one of our database offers [Web Cloud](https://www.ovh.com/fr/hebergement-web/options-sql.xml) or [Private SQL](../getting started-with-private-sql/).
 
 Instructions
 
@@ -37,7 +37,7 @@ First, check [http://travaux.ovh.com/](http://travaux.ovh.com/) that your datace
 
 [!primary]
 >
-> To find this information, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), in the `Web Cloud`{.action} section:
+> To find this information, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section:
 >
 > - To find your web hosting plan's datacentre and filer (file server), choose `Hosting`{.action}` from the left-hand menu, then the hosting plan concerned. You can find this information in the `General information`{.action} tab.
 > - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. This information will appear in the name of your FTP server.
@@ -78,7 +78,7 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ,
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), in the Hosting section, click on the `Databases`{.action} tab, then check the correspondence between the elements displayed and those in the file `wp-config.php`:
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the Hosting section, click on the `Databases`{.action} tab, then check the correspondence between the elements displayed and those in the file `wp-config.php`:
 
 - **my_database** must match what is noted in `Database name`;
 - **my_user** must match what is noted in `User name`;
@@ -87,7 +87,7 @@ In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fr
 
 [!primary]
 >
-> If you are unable to restore access to your website as a result of these changes, [back up your database](../export-databases/) then [restore it to an earlier date](../restore-import-database/#1-restore-an-existing-backup) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> If you are unable to restore access to your website as a result of these changes, [back up your database](../export-databases/) then [restore it to an earlier date](../restore-import-database/#1-restore-an-existing-backup) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 >
 > Then contact a [specialist provider](https://partner.ovhcloud.com/fr/) if necessary. We will not be able to assist you with this.
 >
@@ -113,7 +113,7 @@ Warning
 > If you notice a sudden increase in the size of your database, or if you have a `blog` type site that normally does not use much data, we advise you to contact immediately a [specialist provider](https://partner.ovhcloud.com/fr/). We will not be able to provide you with support on this matter.
 >
 
-To make this change, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) then click on `Hosting`{.action}, then the relevant hosting plan. Click the `... button`{.action} in the `Offer' section on the right of your screen, then `Change Offer`{.action}.
+To make this change, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then click on `Hosting`{.action}, then the relevant hosting plan. Click the `... button`{.action} in the `Offer' section on the right of your screen, then `Change Offer`{.action}.
 
 If you are using a **Performance** offer, refer to [method 2](#method2).
 
@@ -152,11 +152,11 @@ Warning
 
 RAM overflows
 
-The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) indicates that your [Private SQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml) or [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) server has consumed too many resources on OVHcloud infrastructure:
+The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) indicates that your [Private SQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml) or [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) server has consumed too many resources on OVHcloud infrastructure:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In this situation, you can increase the [amount of RAM](.../configure-optimise-your-database-server/#monitor-usage) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). In the `General information`{.action} tab, click the `...`{.action} in the `RAM' section.
+In this situation, you can increase the [amount of RAM](.../configure-optimise-your-database-server/#monitor-usage) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `General information`{.action} tab, click the `...`{.action} in the `RAM' section.
 
 You can also optimise your database by following the instructions in our guide “[Configure your database server](../configure-optimise-your-database-server/#optimise-your-databases_1)”.
 
@@ -197,7 +197,7 @@ This error message means that the database you are trying to import contains ele
 >USE `Database-Name`;
 ,
 >
->(`Database-Name`: Enter the name of the database in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+>(`Database-Name`: Enter the name of the database in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 >
 
 ### “MySQL server has gone away”
@@ -210,7 +210,7 @@ This error message appears when [importing a database](../restore-import-databas
 
 To resolve this issue, you can:
 
-- Increase the [amount of RAM](../configure-optimise-your-database-server/#monitor-usage). To do this, go to the [Private SQL server](../getting started-with-private-sql/) concerned in the ‘Databases’ section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Then click the `... button.`{.action} in the `RAM' section, then `Change RAM`{.action}.
+- Increase the [amount of RAM](../configure-optimise-your-database-server/#monitor-usage). To do this, go to the [Private SQL server](../getting started-with-private-sql/) concerned in the ‘Databases’ section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then click the `... button.`{.action} in the `RAM' section, then `Change RAM`{.action}.
 
 - Split your database, in order to import it into several operations instead of one (for any questions on the manipulations to be carried out, contact our [community of users](https://community.ovh.com) or the [OVHcloud partners](https://partner.ovhcloud.com/fr/). We will not be able to assist you with this.)
 
@@ -259,11 +259,11 @@ This error message appears when [connecting to PhpMyAdmin](../database-database-
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
-Check the name of the server to be registered in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Check the name of the server to be registered in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 > [!success]
 >
-> If the database you would like to connect to appears in the `Databases`{.action} tab in the `Hosting`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), the name to enter is entered in the `Server address' column.
+> If the database you would like to connect to appears in the `Databases`{.action} tab in the `Hosting`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), the name to enter is entered in the `Server address' column.
 >
 > If you want to connect to a database on a server [Private SQL](../getting started-with-private-sql/) or [Cloud Databases](https://www.ovh.com/fr/cloud-databases/), the server name to enter is entered in the tab `General information`{.action}, part `Connection information`{.action}, `SQL`{.action} and in the topic `Host name`{.action}.
 >
