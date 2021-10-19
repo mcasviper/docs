@@ -41,7 +41,7 @@ Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) qu
 >
 > - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action} dans le menu de gauche, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
 > - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
-> - Pour retrouver le nom de votre serveur **Private SQL** ou **Cloud Databases**, cliquez sur `Bases de données`{.action} dans le menu de gauche, puis sur l'offre concernée. Vous trouverez cette information sous la mention `Host` dans l'onglet `Informations générales`{.action}.
+> - Pour retrouver le nom de votre serveur **Private SQL**, cliquez sur `Bases de données`{.action} dans le menu de gauche puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations générales`{.action}.
 >
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
