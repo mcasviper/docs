@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot common database errors 
-excerpt: `Diagnose the most common cases of database errors`
+excerpt: Diagnose the most common cases of database errors
 slug: database-frequent-errors
 Section: Diagnosis
 Order: 4

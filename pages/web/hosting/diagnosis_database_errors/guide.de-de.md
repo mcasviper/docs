@@ -1,9 +1,9 @@
 ---
 title: Die häufigsten Datenbankfehler beheben 
-excerpt "Diagnose der häufigsten Fehler in Zusammenhang mit Datenbanken"
+excerpt: "Diagnose der häufigsten Fehler in Zusammenhang mit Datenbanken"
 slug: datenbanken-fehler
 section: Diagnose
-Bestellung 4
+Bestellung: 4
 ---
 
 „Stand 08.10.2021“
