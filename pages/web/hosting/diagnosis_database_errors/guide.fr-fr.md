@@ -25,7 +25,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 - Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovh.com/fr/hebergement-web/options-sql.xml), [SQL privé](../premiers-pas-avec-sql-prive/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- Utiliser l'une de nos offres de bases de données [StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml), [SQL privé](../premiers-pas-avec-sql-prive/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
 
 ## En pratique
 
