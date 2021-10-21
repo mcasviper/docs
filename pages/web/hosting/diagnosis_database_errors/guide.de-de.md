@@ -61,13 +61,13 @@ Verbinden Sie sich über [FTP](../verbindung-ftp-speicher-webhosting/) mit dem S
 
 Überprüfen Sie anschließend die Übereinstimmung **exakt** zwischen den Zugangsdaten zu [PhpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website.
 
-Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../Passwort-Datenbank/).
+Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../datenbank-passwort-aendern/).
 
 #### Beispiel für Wordpress
 
-Wenn Ihre Website eine Nachricht **“Fehler beim Login in die Datenbank“** veröffentlicht und von einer [Störung](http://travaux.ovh.com/) nicht betroffen ist, loggen Sie sich in [FTP](../ftp-speicherplatz-webhosting/) ein und öffnen Sie dann das Verzeichnis mit Ihrer Website (standardmäßig der Ordner www) .
+Wenn Ihre Website eine Nachricht **“Fehler beim Login in die Datenbank“** veröffentlicht und von einer [Störung](http://travaux.ovh.com/) nicht betroffen ist, loggen Sie sich in [FTP](../verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis mit Ihrer Website (standardmäßig der Ordner www) .
 
-Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei wp-config.php`.
+Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei `wp-config.php`.
 
 ```php
 define('DB_NAME', 'my_database');
@@ -82,16 +82,16 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich Hosting-Pakete {.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei “wp-config.php“ enthaltenen Elementen:
+In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich `Hosting-Pakete`{.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei `wp-config.php` enthaltenen Elementen:
 
 - **my_database** muss dem im Namen der Datenbank hinterlegten Wert entsprechen;
 - **my_user** muss dem entsprechen, was in `Benutzername` notiert wird;
-- **my_password** entspricht dem [Passwort Ihrer Datenbank](../datenbank-passwort/);
-- **my_server.mysql.db** muss dem entsprechen, was in der `Adresse des Servers` angegeben ist.
+- **my_password** entspricht dem [Passwort Ihrer Datenbank](../datenbank-passwort-aendern/);
+- **my_server.mysql.db** muss dem entsprechen, was in der `Server-Adresse` angegeben ist.
 
 > [!primary]
 >
-> Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, [Datenbank-Backup](../Export-Datenbanken/) und [Wiederherstellen zu einem früheren Zeitpunkt](../Wiederherstellen-Datenbank-Import/#1-Wiederherstellung-eines-existierenden Backups) von Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus.
+> Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, [Datenbank-Backup](../webhosting_hilfe_zum_export_von_datenbanken/) und [Wiederherstellen zu einem früheren Zeitpunkt](../datenbank-importieren/#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren) von Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus.
 >
 > Kontaktieren Sie gegebenenfalls einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
@@ -106,7 +106,7 @@ Mit drei Methoden können Sie Ihre Datenbank entsperren:
 
 #### Methode 1: Ihr Abo auf ein höheres Angebot umstellen
 
-Wenn Sie über eine Formel **Basic** oder **Pro** verfügen, empfehlen wir Ihnen in dieser Situation, auf das [höhere Hosting-Angebot](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) umzustellen. Diese Änderung des Abonnements erhöht die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
+Wenn Sie über eine Formel **Basic** oder **Pro** verfügen, empfehlen wir Ihnen in dieser Situation, auf das [höhere Hosting-Angebot](https://www.ovh.de/hosting/) umzustellen. Diese Änderung des Abonnements erhöht die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
 
 > [!warning]
 >
@@ -114,7 +114,7 @@ Wenn Sie über eine Formel **Basic** oder **Pro** verfügen, empfehlen wir Ihnen
 >
 > Eine Anomalie kann zu einer dauerhaften Vergrößerung Ihrer Datenbank führen, da ein Wechsel des Webhosting Angebots nicht funktioniert.
 >
-> Daher empfehlen wir Ihnen, wenn Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie über eine Seite vom Typ “Blog“verfügen, die normalerweise keine Daten verbraucht, sofort einen [spezialisierten Dienstleister] zu kontaktieren(https://partner.ovhcloud.com/de/). Wir werden Sie in dieser Angelegenheit nicht unterstützen können.
+> Daher empfehlen wir Ihnen, wenn Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie über eine Seite vom Typ “Blog“ verfügen, die normalerweise keine Daten verbraucht, sofort einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Sie in dieser Angelegenheit nicht unterstützen können.
 >
 
 Loggen Sie sich hierfür zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie dann auf Hosting-Pakete {.action} und anschließend auf das betreffende Hosting. Klicken Sie auf den Button ..{.action} in der Rubrik Angebot` rechts auf Ihrem Bildschirm, dann auf@ Angebotswechsel {.action}.
@@ -126,7 +126,7 @@ Wenn Sie ein Angebot **Performance** verwenden, lesen Sie [Methode 2](#methode2)
 Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
 - Wenn nötig, bestellen Sie eine [Datenbank](https://www.ovh.de/hosting/sql-optionen.xml) höherer Größe und starten Sie die [Erstellung](../erstellen-datenbank/).
-- Führen Sie einen [Export Ihrer Daten](../Export-Datenbanken/) durch und [importieren Sie diese](../Importieren-Anleitung-einer-mysql-Datenbank/) in die neue Datenbank.
+- Führen Sie einen [Export Ihrer Daten](../webhosting_hilfe_zum_export_von_datenbanken/) durch und [importieren Sie diese](../Importieren-Anleitung-einer-mysql-Datenbank/) in die neue Datenbank.
 - Integrieren Sie die Login-Daten der neuen Datenbank in die [Konfigurationsdatei](#config_file) Ihrer Website.
 
 > [!primary]
@@ -136,7 +136,7 @@ Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
 #### Methode 3: Unnötige Daten löschen
 
-Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](../export-datenbanken/) mit Ihrem [PhpMyAdmin](../erstellen-datenbank/#acceder-a-linterface-phpmyadmin) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
+Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](../webhosting_hilfe_zum_export_von_datenbanken/) mit Ihrem [PhpMyAdmin](../erstellen-datenbank/#acceder-a-linterface-phpmyadmin) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
 
 Starten Sie anschließend die Berechnung des verwendeten Quotas über den Tab @ Datenbanken {.action} des betreffenden Hostings neu: klicken Sie auf die Schaltfläche Kfz..{.action} betroffen und dann auf Quota {.action} neu berechnen.
 
@@ -177,7 +177,7 @@ Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in 
 > **“#1044 - Access denied for user to database**
 >
 
-Vergewissern Sie sich zunächst, dass Ihre Datenbank im Tab “Datenbanken des betreffenden Webhostings {.action}“ leer ist (klicken Sie auf die Schaltfläche Kfz..{.action} betroffen und dann auf Quota {.action} neu berechnen, um [vorhandene Daten zu sichern](../export-datenbanken/).
+Vergewissern Sie sich zunächst, dass Ihre Datenbank im Tab “Datenbanken des betreffenden Webhostings {.action}“ leer ist (klicken Sie auf die Schaltfläche Kfz..{.action} betroffen und dann auf Quota {.action} neu berechnen, um [vorhandene Daten zu sichern](../webhosting_hilfe_zum_export_von_datenbanken/).
 
 Sie können auch das Kästchen _leerung die aktuelle Datenbank {.action} kurz vor der [Import starten](../Importhilfe-Hilfe-für-eine-mysql-Datenbank/#Eigene-Sicherung-aus-dem-Kunden importieren) ankreuzen:
 
