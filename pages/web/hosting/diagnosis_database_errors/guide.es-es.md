@@ -28,8 +28,8 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 ## Requisitos
 
 - Disponer de un [plan de hosting](https://www.ovh.es/hosting/) OVHcloud.
-- Disponer de las [claves de conexión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovh.es/hosting/opciones-sql.xml), [SQL Privado](../primeros-pasos-con-sql-privado/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovh.es/hosting/opciones-sql.xml) o [SQL Privado](../primeros-pasos-con-sql-privado/).
 
 ## Procedimiento
 
@@ -37,35 +37,35 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 #### Comprobar los incidentes en curso
 
-En primer lugar, compruebe en [http://travaux.ovh.com/](http://travaux.ovh.com/) que su datacenter, su cluster de alojamiento, su servidor SQL privado o Cloud Databases no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
+En primer lugar, compruebe en [http://travaux.ovh.com/](http://travaux.ovh.com/) que su datacenter, su cluster de alojamiento, su servidor SQL privado no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
 
 > [!primary]
 >
 > Para encontrar esta información, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action} :
 >
-> Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione el menú de la izquierda `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
+> - Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione el menú de la izquierda `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 > - Para consultar el **cluster** de servidores en el que se encuentra el alojamiento, abra la pestaña `FTP-SSH`{.action}. Esta información aparecerá en el nombre del servidor FTP.
 > - Para encontrar el nombre de su servidor **Private SQL**, haga clic en `Bases de datos`{.action} en el menú de la izquierda y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 >
 
 #### Comprobar las claves de conexión a su base de datos <a name="config_file"></a>
 
-Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [FTP](../conecte-espacio-almacenamiento-ftp-alojamiento-web/) y consulte el archivo de configuración de su sitio web (por ejemplo, para un sitio web WordPress, se trata del archivo **wp-config.php** situado en el directorio que contiene su sitio web).
+Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) y consulte el archivo de configuración de su sitio web (por ejemplo, para un sitio web WordPress, se trata del archivo **wp-config.php** situado en el directorio que contiene su sitio web).
 
 > [!warning]
 >
 > La elección y configuración del archivo que contiene la información de conexión a la base de datos es inherente al editor de contenidos (CMS) correspondiente y no a OVHcloud.
 >
-> Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](../modulos-en-1-clic/) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en este asunto.
+> Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](../modulos-en-un-clic/) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en este asunto.
 >
 
 Compruebe la coincidencia **exacta** entre los identificadores de conexión a [PhpMyAdmin](../crear-base-de-datos/#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
 
-Cambie, si es necesario, la [contraseña de su base de datos](../cambiar-contraseña-base-de-datos/).
+Cambie, si es necesario, la [contraseña de su base de datos](../cambiar-contrasena-base-de-datos/).
 
 #### Ejemplo para Wordpress
 
-Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](http://travaux.ovh.com/), conéctese a [FTP](../conexión-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
+Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](http://travaux.ovh.com/), conéctese a [FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
 
 Si se trata de un sitio web WordPress, abra el archivo **wp-config.php**.
 
