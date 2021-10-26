@@ -7,7 +7,6 @@ Order: 4
 ---
 
 > [!primary]
-<<<<<<< HEAD
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
@@ -15,15 +14,6 @@ Order: 4
 
 ## Objetivo
 
-=======
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
-**Última actualización: 08/10/2021**
-
-## Objetivo
-
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), así como en la interfaz [PhpMyAdmin](../crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
 
 **Descubra cómo solucionar los errores relacionados con las bases de datos de los alojamientos compartidos de OVHcloud.**
@@ -38,13 +28,8 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 ## Requisitos
 
 - Disponer de un [plan de hosting](https://www.ovh.es/hosting/) OVHcloud.
-<<<<<<< HEAD
 - Disponer de las [claves de conexión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
 - Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovh.es/hosting/opciones-sql.xml), [SQL Privado](../primeros-pasos-con-sql-privado/).
-=======
-https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovh.es/hosting/options-sql.xml), [SQL Privado](../primeros-pasos-con-sql-privado/).
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 ## Procedimiento
 
@@ -58,11 +43,7 @@ En primer lugar, compruebe en [http://travaux.ovh.com/](http://travaux.ovh.com/)
 >
 > Para encontrar esta información, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action} :
 >
-<<<<<<< HEAD
 > Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione el menú de la izquierda `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
-=======
-> Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione el menú de la izquierda `Alojamientos`{.action}" y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 > - Para consultar el **cluster** de servidores en el que se encuentra el alojamiento, abra la pestaña `FTP-SSH`{.action}. Esta información aparecerá en el nombre del servidor FTP.
 > - Para encontrar el nombre de su servidor **Private SQL**, haga clic en `Bases de datos`{.action} en el menú de la izquierda y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 >
@@ -75,11 +56,7 @@ Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [
 >
 > La elección y configuración del archivo que contiene la información de conexión a la base de datos es inherente al editor de contenidos (CMS) correspondiente y no a OVHcloud.
 >
-<<<<<<< HEAD
 > Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](../modulos-en-1-clic/) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en este asunto.
-=======
-Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](../modulos-en-1-clic/) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en este asunto.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 
 Compruebe la coincidencia **exacta** entre los identificadores de conexión a [PhpMyAdmin](../crear-base-de-datos/#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
@@ -114,11 +91,7 @@ En el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 > [!primary]
 >
-<<<<<<< HEAD
 > Si esta operación no le permite restablecer el acceso a su sitio web, [guarde su base de datos](../web_hosting_exportacion_de_una_base_de_datos/) y después [restablezca-la a una fecha anterior](../restaurar-importar-base de datos/#1-restaurar-una-copia de seguridad-existente) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-=======
-> Si esta operación no le permite restablecer el acceso a su sitio web, [guarde su base de datos] (../exportar-bases de datos/) y después [restablezca-la a una fecha anterior](../restaurar-importar-base de datos/#1-restaurar-una-copia de seguridad-existente) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 > Contacte a continuación con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) si es necesario. No podremos asistirle en este asunto.
 >
@@ -133,11 +106,7 @@ Desbloquee la base de datos de tres formas distintas:
 
 #### Método 1: cambiar la suscripción a un plan superior
 
-<<<<<<< HEAD
 Si dispone de una fórmula **Personal** o **Professional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovh.es/hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
-=======
-Si dispone de una fórmula **Perso** o **Pro**, le recomendamos que cambie a [plan de hosting superior](https://www.ovh.es/hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 > [!warning]
 >
@@ -148,11 +117,7 @@ Si dispone de una fórmula **Perso** o **Pro**, le recomendamos que cambie a [pl
 > Si detecta un aumento repentino en el tamaño de su base de datos o si tiene un sitio web de tipo "blog" que normalmente no consume datos, le recomendamos que contacte inmediatamente con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos ofrecerle soporte sobre este tema.
 >
 
-<<<<<<< HEAD
 Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en el botón `...`{.action} en el epígrafe `Producto` situado a la derecha de su pantalla y, seguidamente, en `Cambiar de plan`{.action}.
-=======
-Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Alojamientos`{.action}" y seleccione el alojamiento correspondiente. Haga clic en el botón `...`{.action} en el epígrafe `Oferta` situado a la derecha de su pantalla y, seguidamente, en `Cambiar de producto`{.action}.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
@@ -160,13 +125,8 @@ Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
 También puede migrar sus datos a una nueva base de datos:
 
-<<<<<<< HEAD
 - Contrate, si es necesario, una [base de datos](https://www.ovh.es/hosting/opciones-sql.xml) de mayor tamaño y lance su [creación](../crear-base-de-datos/).
 - Realice un [exportar sus datos](../web_hosting_exportacion_de_una_base_de_datos/) y a continuación [importar los](../web_hosting_importacion_de_una_base_de_datos_mysql/) en la nueva base de datos;
-=======
-- Contrate, si es necesario, una [base de datos](https://www.ovh.es/hosting/options-sql.xml) de mayor tamaño y lance su [creación](../crear-base-de-datos/).
-- Realice un [exportar sus datos](../exportar-bases de datos/) y a continuación [importar los](../mutualizar-guía-importación-de-base-de-datos-mysql/) en la nueva base de datos;
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 - Integre las claves de la nueva base de datos en el [archivo de configuración](#config_file) de su sitio web.
 
 > [!primary]
@@ -178,11 +138,7 @@ También puede migrar sus datos a una nueva base de datos:
 
 Una vez realizada la [copia de seguridad de su base de datos](../web_hosting_exportacion_de_una_base_de_datos/), conéctese a su interfaz [PhpMyAdmin](../crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin) para eliminar los datos innecesarios con los comandos Drop, Delete y Truncate.
 
-<<<<<<< HEAD
 Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e inicie el cálculo de la cuota utilizada. pulse el botón `...`{.action} correspondiente y luego `Recalcular el espacio utilizado`{.action}.
-=======
-Abra la pestaña "Bases de datos" {.action} del alojamiento correspondiente e inicie el cálculo de la cuota utilizada. pulse el botón `...`{.action} correspondiente y luego `Recalcular la cuota`{.action}.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 > [!warning]
 >
@@ -191,46 +147,26 @@ Abra la pestaña "Bases de datos" {.action} del alojamiento correspondiente e in
 
 #### Método 4: optimizar la base de datos
 
-<<<<<<< HEAD
 Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](../configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
 
 > [!warning]
 >
 > Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle en este asunto.
-=======
-Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](../configurar-optimizar-su-servidor-de-base de datos/#optimizar-sus-bases de datos_1)". Abra la pestaña `Bases de datos` {.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
-
-> [!warning]
->
-Si el asesoramiento ofrecido sobre la optimización de su base de datos no bastaba para desbloquear el acceso a su sitio web, le recomendamos que se ponga en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle en este asunto.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 
 ### Memoria RAM rebasada
 
-<<<<<<< HEAD
 El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [SQL privado](https://www.ovh.es/hosting/opciones-sql.xml) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
 En ese caso, puede aumentar la [cantidad de memoria RAM](../configurar-optimizar-su-servidor-de-base-de-datos/#cambiar-la-oferta-del-servidor-de-bases-de-datos_1) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
-=======
-El siguiente mensaje, situado en la sección "Bases de datos" {.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [SQL privado](https://www.ovh.es/hosting/options-sql.xml) o [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
-
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
-
-En ese caso, puede aumentar la [cantidad de memoria RAM](../configurar-optimizar-su-servidor-de-base-de-datos/#seguir-la-ram-consumo) disponible desde la sección "Bases de datos" {.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña "Información general {.action}", haga clic en el botón "..."`{.action} en la sección `RAM`.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 También puede optimizar su base de datos siguiendo las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](../configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)".
 
 > [!primary]
 >
-<<<<<<< HEAD
 > Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). No podremos asistirle en este asunto.
-=======
-> Si tiene dificultades para reducir el uso de los recursos en su servidor de bases de datos y no quiere aumentarlos, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). No podremos asistirle en este asunto.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 
 ### Errores de importación de bases de datos
@@ -241,11 +177,7 @@ También puede optimizar su base de datos siguiendo las instrucciones de nuestra
 > **"#1044 - Access denied for user to database"**
 >
 
-<<<<<<< HEAD
 Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud.
-=======
-En primer lugar, asegúrese de que la base de datos esté vacía en la pestaña `Bases de datos`{.action} del alojamiento correspondiente (haga clic en el botón...).`{.action} correspondiente y, seguidamente, `Recalcular el límite` {.action} para [guardar la información presente](../exportar-bases de datos/).
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 En primer lugar, asegúrese de que la base de datos esté vacía en la pestaña `Bases de datos`{.action} del alojamiento correspondiente (haga clic en el botón `...`{.action}) correspondiente y seleccione `Recalcular el espacio utilizado`{.action}.
 
@@ -257,27 +189,7 @@ También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo
 
 Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). No podremos asistirle en la corrección de esta anomalía.
 
-<<<<<<< HEAD
 > [!faq]
-=======
-> [!success]
->
-> Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [SQL Privado](https://www.ovh.es/hosting/options-sql.xml).
->
-> Por otro lado, no está permitida la siguiente petición:
->
->```bash
->CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
->```
->
-> Sustituya por:
->
->```bash
-SaaS DataBase {{name}};
->```
->
->(`Database-Name` : indique el nombre de la base de datos indicada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es))
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 > Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml).
 
@@ -305,15 +217,9 @@ Este mensaje de error aparece durante [la importación de una base de datos](../
 
 Para resolver esta anomalía, puede:
 
-<<<<<<< HEAD
 - Aumentar la [cantidad de memoria RAM](../configurar-optimizar-su-servidor-base-de-datos/#seguir-la-ram-consumo). Para ello, acceda al [servidor SQL privado](../primeros-pasos-con-sql-privado/) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
 
 - Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle en este asunto.
-=======
-- Aumentar la [cantidad de memoria RAM](../configurar-optimizar-su-servidor-base-de-datos/#seguir-la-ram-consumo). Para ello, acceda al [servidor SQL privado](../primeros-pasos-con-sql-privado/) correspondiente en la sección `Bases de datos` de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}".
-
-- Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle en este asunto.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 - [Optimice su base de datos](../configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1) y luego repite las operaciones de exportación/importación.
 
@@ -337,11 +243,7 @@ En ese caso, [compruebe los identificadores indicados](../conectar-base-de-datos
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-<<<<<<< HEAD
 El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovh.es/hosting/opciones-sql.xml) es de **30**.
-=======
-El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos ([StartSQL](https://www.ovh.es/hosting/options-sql.xml) es de **30**.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 Este número es de **200** para las bases de servidores [SQL Privado](../primeros-pasos-con-sql-privado/). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
 
@@ -351,11 +253,7 @@ En ese caso, deberá [optimizar las bases de datos](../configurar-optimizar-su-s
 
 > [!warning]
 >
-<<<<<<< HEAD
 > Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle en este asunto.
-=======
-> Para más información sobre las operaciones que debe realizar para reducir el número de conexiones activas a la base de datos, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle en este asunto.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 
 #### "Name or service not known"
@@ -372,30 +270,12 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 
 > [!success]
 >
-<<<<<<< HEAD
 > Si la base de datos a la que desea conectarse aparece en la pestaña `Bases de datos`{.action} de la parte `Alojamientos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), el nombre que debe introducir se indica en la columna `Dirección del servidor`.
-=======
-> Si la base de datos a la que desea conectarse aparece en la pestaña `Bases de datos {.action} de la parte `Alojamientos' {.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), el nombre que debe introducir se indica en la columna `Dirección del servidor.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 >
 > Si desea conectarse a una base de datos en un servidor [SQL Privado](.../primeros-pasos-con-sql-privado/), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
 
-<<<<<<< HEAD
 ## Más información <a name="gofurther"></a>
-=======
-### No se ha podido conectar a una base de datos Cloud Databases.
-
-Disponer de un servidor [Cloud Databases](https://docs.ovh.com/fr/clouddb/) le permite [conectarse a sus bases de datos](../conexión-base-de-datos-servidor-bdd/) desde su ordenador o un servidor externo a la infraestructura de OVHcloud.
-
-Si esta conexión no es posible, compruebe que [ha autorizado la dirección IP pública](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#autoriser-une-adresse-ip) a conectarse al servidor de bases de datos.
-
-Si la operación se ha realizado correctamente, póngase en contacto con su proveedor de acceso a internet o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/). No podremos asistirle en esta situación.
-
-## Ir más lejos <a name="ir más lejos"></a>
-
-[Primeros pasos con el servicio SQL Privado](.../primeros-pasos-con-sql-privado/)
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 [Primeros pasos con el servicio SQL Privado](../primeros-pasos-con-sql-privado/)
 
