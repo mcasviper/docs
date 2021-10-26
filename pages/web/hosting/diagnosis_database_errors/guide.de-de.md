@@ -67,7 +67,11 @@ Verbinden Sie sich über [FTP](../verbindung-ftp-speicher-webhosting/) mit dem S
 
 Wenn Ihre Website eine Nachricht **“Fehler beim Login in die Datenbank“** veröffentlicht und von einer [Störung](http://travaux.ovh.com/) nicht betroffen ist, loggen Sie sich in [FTP](../verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis mit Ihrer Website (standardmäßig der Ordner www) .
 
+<<<<<<< HEAD
 Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei **wp-config.php**.
+=======
+Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei `wp-config.php`.
+>>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 ```php
 define('DB_NAME', 'my_database');
@@ -82,7 +86,11 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
+<<<<<<< HEAD
 In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich `Hosting-Pakete`{.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei **wp-config.php** enthaltenen Elementen:
+=======
+In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich `Hosting-Pakete`{.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei `wp-config.php` enthaltenen Elementen:
+>>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 - **my_database** muss dem im Namen der Datenbank hinterlegten Wert entsprechen;
 - **my_user** muss dem entsprechen, was in `Benutzername` notiert wird;
