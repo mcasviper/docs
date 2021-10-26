@@ -67,30 +67,22 @@ Verbinden Sie sich über [FTP](../verbindung-ftp-speicher-webhosting/) mit dem S
 
 Wenn Ihre Website eine Nachricht **“Fehler beim Login in die Datenbank“** veröffentlicht und von einer [Störung](http://travaux.ovh.com/) nicht betroffen ist, loggen Sie sich in [FTP](../verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis mit Ihrer Website (standardmäßig der Ordner www) .
 
-<<<<<<< HEAD
-Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei **wp-config.php**.
-=======
 Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei `wp-config.php`.
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 ```php
 define('DB_NAME', 'my_database');
- 
+
 /** MySQL database username */
 define('DB_USER', 'my_user');
- 
+
 /** MySQL database password */
 define('DB_PASSWORD', 'my_password');
- 
+
 /** MySQL hostname */
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-<<<<<<< HEAD
-In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich `Hosting-Pakete`{.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei **wp-config.php** enthaltenen Elementen:
-=======
 In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich `Hosting-Pakete`{.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei `wp-config.php` enthaltenen Elementen:
->>>>>>> 9e937d018ec616ec7438b0ec9383e1a004104f43
 
 - **my_database** muss dem im Namen der Datenbank hinterlegten Wert entsprechen;
 - **my_user** muss dem entsprechen, was in `Benutzername` notiert wird;
@@ -193,24 +185,23 @@ Sie können auch das Kästchen leerung die aktuelle `Datenbanken`{.action} kurz 
 
 Diese Fehlermeldung bedeutet, dass die Datenbank, die Sie importieren möchten, unberechtigte Elemente auf der Shared Hosting Infrastruktur von OVHcloud enthält. Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/). Wir werden Ihnen keine Hilfe bei der Behebung dieser Anomalie bieten können.
 
-> [!success]
+> [!faq]
 >
 > Es ist nicht erlaubt, einen **“Trigger“** im Importskript Ihrer Datenbank zu haben. Importieren Sie in diesem Fall Ihre Datenbank auf einen [SQL Private Server](https://www.ovh.de/hosting/sql-optionen.xml).
->
-> Außerdem ist folgender Antrag nicht zulässig:
->
->```bash
->CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
->```
->
-> Ersetzen Sie sie durch:
->
->```bash
->USE `Database-Name`;
->```
->
-> (`Database-Name`: Geben Sie den Namen der Datenbank in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an)
->
+
+Außerdem ist folgender Antrag nicht zulässig:
+
+```mysql
+CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
+```
+
+Ersetzen Sie sie durch:
+
+```mysql
+USE `Database-Name`;
+```
+
+(`Database-Name`: Geben Sie den Namen der Datenbank in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an)
 
 #### “MySQL server has gone away“
 

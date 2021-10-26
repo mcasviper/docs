@@ -66,13 +66,13 @@ If this is a WordPress site, open the file "wp-config.php".
 
 ```php
 define('DB_NAME', 'my_database');
- 
+
 /** MySQL database username */
 define('DB_USER', 'my_user');
- 
+
 /** MySQL database password */
 define('DB_PASSWORD', 'my_password');
- 
+
 /** MySQL hostname */
 define('DB_HOST', 'my_server.mysql.db:port');
 ```

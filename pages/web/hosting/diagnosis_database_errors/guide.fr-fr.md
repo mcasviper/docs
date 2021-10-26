@@ -67,13 +67,13 @@ S'il s'agit d'un site Wordpress, ouvrez le fichier `wp-config.php`.
 
 ```php
 define('DB_NAME', 'my_database');
- 
+
 /** MySQL database username */
 define('DB_USER', 'my_user');
- 
+
 /** MySQL database password */
 define('DB_PASSWORD', 'my_password');
- 
+
 /** MySQL hostname */
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
@@ -193,13 +193,13 @@ Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé s
 
 Par ailleurs, la requête suivante n'est pas autorisée :
 
-```bash
+```mysql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Remplacez-la par :
 
-```bash
+```mysql
 USE `Database-Name`;
 ```
 

@@ -195,13 +195,13 @@ Este mensaje de error significa que la base de datos que está intentando import
 
 Por otro lado, no está permitida la siguiente petición:
 
-```bash
+```mysql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Sustituya por:
 
-```bash
+```mysql
 USE `Database-Name`;
 ```
 
