@@ -61,13 +61,13 @@ Verbinden Sie sich über [FTP](../verbindung-ftp-speicher-webhosting/) mit dem S
 
 Überprüfen Sie anschließend die Übereinstimmung **exakt** zwischen den Zugangsdaten zu [PhpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website.
 
-Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../Passwort-Datenbank/).
+Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../datenbank-passwort-aendern/).
 
 #### Beispiel für Wordpress
 
-Wenn Ihre Website eine Nachricht **“Fehler beim Login in die Datenbank“** veröffentlicht und von einer [Störung](http://travaux.ovh.com/) nicht betroffen ist, loggen Sie sich in [FTP](../ftp-speicherplatz-webhosting/) ein und öffnen Sie dann das Verzeichnis mit Ihrer Website (standardmäßig der Ordner www) .
+Wenn Ihre Website eine Nachricht **“Fehler beim Login in die Datenbank“** veröffentlicht und von einer [Störung](http://travaux.ovh.com/) nicht betroffen ist, loggen Sie sich in [FTP](../verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis mit Ihrer Website (standardmäßig der Ordner www) .
 
-Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei wp-config.php`.
+Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei **wp-config.php**.
 
 ```php
 define('DB_NAME', 'my_database');
@@ -82,16 +82,16 @@ define('DB_PASSWORD', 'my_password');
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
 
-In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich Hosting-Pakete {.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei “wp-config.php“ enthaltenen Elementen:
+In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) klicken Sie im Bereich `Hosting-Pakete`{.action} auf den Tab `Datenbanken`{.action} und überprüfen Sie anschließend die Übereinstimmung der angezeigten Elemente mit den in der Datei **wp-config.php** enthaltenen Elementen:
 
 - **my_database** muss dem im Namen der Datenbank hinterlegten Wert entsprechen;
 - **my_user** muss dem entsprechen, was in `Benutzername` notiert wird;
-- **my_password** entspricht dem [Passwort Ihrer Datenbank](../datenbank-passwort/);
-- **my_server.mysql.db** muss dem entsprechen, was in der `Adresse des Servers` angegeben ist.
+- **my_password** entspricht dem [Passwort Ihrer Datenbank](../datenbank-passwort-aendern/);
+- **my_server.mysql.db** muss dem entsprechen, was in der `Server-Adresse` angegeben ist.
 
 > [!primary]
 >
-> Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, [Datenbank-Backup](../Export-Datenbanken/) und [Wiederherstellen zu einem früheren Zeitpunkt](../Wiederherstellen-Datenbank-Import/#1-Wiederherstellung-eines-existierenden Backups) von Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus.
+> Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, [Datenbank-Backup](../webhosting_hilfe_zum_export_von_datenbanken/) und [Wiederherstellen zu einem früheren Zeitpunkt](../datenbank-importieren/#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren) von Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus.
 >
 > Kontaktieren Sie gegebenenfalls einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
@@ -106,7 +106,7 @@ Mit drei Methoden können Sie Ihre Datenbank entsperren:
 
 #### Methode 1: Ihr Abo auf ein höheres Angebot umstellen
 
-Wenn Sie über eine Formel **Basic** oder **Pro** verfügen, empfehlen wir Ihnen in dieser Situation, auf das [höhere Hosting-Angebot](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) umzustellen. Diese Änderung des Abonnements erhöht die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
+Wenn Sie über eine Formel **Basic** oder **Pro** verfügen, empfehlen wir Ihnen in dieser Situation, auf das [höhere Hosting-Angebot](https://www.ovh.de/hosting/) umzustellen. Diese Änderung des Abonnements erhöht die Größe Ihrer Datenbank, was sie automatisch wieder öffnet. Diese Methode ist die einfachste und erfordert keine besondere technische Kompetenz.
 
 > [!warning]
 >
@@ -114,10 +114,10 @@ Wenn Sie über eine Formel **Basic** oder **Pro** verfügen, empfehlen wir Ihnen
 >
 > Eine Anomalie kann zu einer dauerhaften Vergrößerung Ihrer Datenbank führen, da ein Wechsel des Webhosting Angebots nicht funktioniert.
 >
-> Daher empfehlen wir Ihnen, wenn Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie über eine Seite vom Typ “Blog“verfügen, die normalerweise keine Daten verbraucht, sofort einen [spezialisierten Dienstleister] zu kontaktieren(https://partner.ovhcloud.com/de/). Wir werden Sie in dieser Angelegenheit nicht unterstützen können.
+> Daher empfehlen wir Ihnen, wenn Sie eine plötzliche Vergrößerung Ihrer Datenbank feststellen oder wenn Sie über eine Seite vom Typ “Blog“ verfügen, die normalerweise keine Daten verbraucht, sofort einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Sie in dieser Angelegenheit nicht unterstützen können.
 >
 
-Loggen Sie sich hierfür zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie dann auf Hosting-Pakete {.action} und anschließend auf das betreffende Hosting. Klicken Sie auf den Button ..{.action} in der Rubrik Angebot` rechts auf Ihrem Bildschirm, dann auf@ Angebotswechsel {.action}.
+Loggen Sie sich hierfür zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie dann auf `Hosting-Pakete`{.action} und anschließend auf das betreffende Hosting. Klicken Sie auf den Button `...`{.action} in der Rubrik `Angebot`{.action} in `Abo`{.action} rechts auf Ihrem Bildschirm, dann auf `Upgraden`{.action}.
 
 Wenn Sie ein Angebot **Performance** verwenden, lesen Sie [Methode 2](#methode2).
 
@@ -125,20 +125,20 @@ Wenn Sie ein Angebot **Performance** verwenden, lesen Sie [Methode 2](#methode2)
 
 Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
-- Wenn nötig, bestellen Sie eine [Datenbank](https://www.ovh.de/hosting/sql-optionen.xml) höherer Größe und starten Sie die [Erstellung](../erstellen-datenbank/).
-- Führen Sie einen [Export Ihrer Daten](../Export-Datenbanken/) durch und [importieren Sie diese](../Importieren-Anleitung-einer-mysql-Datenbank/) in die neue Datenbank.
+- Wenn nötig, bestellen Sie eine [Datenbank](https://www.ovh.de/hosting/sql-optionen.xml) höherer Größe und starten Sie die [Erstellung](../datenbank-erstellen/).
+- Führen Sie einen [Export Ihrer Daten](../webhosting_hilfe_zum_export_von_datenbanken/) durch und [importieren Sie diese](../webhosting_import_einer_mysql-datenbank/) in die neue Datenbank.
 - Integrieren Sie die Login-Daten der neuen Datenbank in die [Konfigurationsdatei](#config_file) Ihrer Website.
 
 > [!primary]
 >
-> Wenn Sie über ein Hosting-Paket verfügen **Performance**, können Sie auch [kostenlos einen SQL Private Server aktivieren](../erste-schritte-mit-sql-private/#aktivierung-ihres-sql-private-servers-inklusive-mit-ihrem-webhosting-angebot).
+> Wenn Sie über ein Hosting-Paket verfügen **Performance**, können Sie auch [kostenlos einen SQL Private Server aktivieren](../erste-schritte-mit-sql-private/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-private-sql-servers).
 >
 
 #### Methode 3: Unnötige Daten löschen
 
-Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](../export-datenbanken/) mit Ihrem [PhpMyAdmin](../erstellen-datenbank/#acceder-a-linterface-phpmyadmin) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
+Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](../webhosting_hilfe_zum_export_von_datenbanken/) mit Ihrem [PhpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
 
-Starten Sie anschließend die Berechnung des verwendeten Quotas über den Tab @ Datenbanken {.action} des betreffenden Hostings neu: klicken Sie auf die Schaltfläche Kfz..{.action} betroffen und dann auf Quota {.action} neu berechnen.
+Starten Sie anschließend die Berechnung des verwendeten Quotas über den Tab `Datenbanken`{.action} des betreffenden Hostings neu: klicken Sie auf die Schaltfläche `...`{.action} betroffen und dann auf `Das Quota neu berechnen`{.action}.
 
 > [!warning]
 >
@@ -147,47 +147,47 @@ Starten Sie anschließend die Berechnung des verwendeten Quotas über den Tab @ 
 
 #### Methode 4: Ihre Datenbank optimieren
 
-Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Ihren Datenbank-Server konfigurieren](../konfigurieren-optimieren-ihres-datenbanken/#optimieren-ihrer-datenbanken_1)“. Beginnen Sie anschließend mit der Berechnung des verwendeten Quotas im Tab Datenbanken {.action} Ihres Hostings, indem Sie auf den Button klicken ..{.action} aus der betreffenden Datenbank.
+Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Konfigurieren Ihres Datenbankservers](../konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren_1)“. Beginnen Sie anschließend mit der Berechnung des verwendeten Quotas im Tab `Datenbanken`{.action} Ihres Hostings, indem Sie auf den Button klicken `...`{.action} aus der betreffenden Datenbank.
 
 > [!warning]
 >
 > Wenn die Tipps zur Optimierung Ihrer Datenbank nicht ausreichen, um den Zugriff auf Ihre Website zu entsperren, empfehlen wir Ihnen, unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-Überschreitungen der RAM-Kapazität
+### Überschreitungen der RAM-Kapazität
 
-In der folgenden Nachricht im Bereich “Datenbanken {.action}“in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihr Server [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
+In der folgenden Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihr [Server SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In diesem Fall können Sie die [RAM-Menge](../konfigurieren-Sie-Ihren-Datenbank-Server/#Monitoring-Nutzung), die im Bereich {.action} Datenbanken Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar ist, erhöhen. Klicken Sie im Tab Allgemeine Informationen {.action} auf die Schaltfläche Kfz..{.action} im Bereich RAM`.
+In diesem Fall können Sie die [RAM-Menge](../konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1), die im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar ist, erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
 
-Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung “[Ihren Datenbankserver konfigurieren](../konfigurieren-optimieren-ihres-datenbanken/#optimieren-ihrer-datenbanken_1)“ befolgen.
+Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung “[Ihren Datenbankserver konfigurieren](../konfigurieren-ihres-datenbank-servers/#uberprufung-der-ram-nutzung)“ befolgen.
 
 [!primary]
 >
 > Wenn Sie Schwierigkeiten haben, die Nutzung von Ressourcen auf Ihrem Datenbankserver zu reduzieren, und diese nicht erhöhen möchten, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-## Fehler beim Import von Datenbanken
+### Fehler beim Import von Datenbanken
 
 #### “Access denied for user to database“
 
 >
-> **“#1044 - Access denied for user to database**
+> **“#1044 - Access denied for user to database“**
 >
 
-Vergewissern Sie sich zunächst, dass Ihre Datenbank im Tab “Datenbanken des betreffenden Webhostings {.action}“ leer ist (klicken Sie auf die Schaltfläche Kfz..{.action} betroffen und dann auf Quota {.action} neu berechnen, um [vorhandene Daten zu sichern](../export-datenbanken/).
+Vergewissern Sie sich zunächst, dass Ihre Datenbank im Tab `Datenbanken`{.action} des betreffenden Webhostings leer ist (klicken Sie auf die Schaltfläche `...`{.action} betroffen und dann auf `Das Quota neu berechnen`{.action}, um [vorhandene Daten zu sichern](../webhosting_hilfe_zum_export_von_datenbanken/).
 
-Sie können auch das Kästchen _leerung die aktuelle Datenbank {.action} kurz vor der [Import starten](../Importhilfe-Hilfe-für-eine-mysql-Datenbank/#Eigene-Sicherung-aus-dem-Kunden importieren) ankreuzen:
+Sie können auch das Kästchen leerung die aktuelle `Datenbanken`{.action} kurz vor der [Import starten](../webhosting_import_einer_mysql-datenbank/#eigene-backup-datei-uber-das-kundencenter-importieren) ankreuzen:
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
-Diese Fehlermeldung bedeutet, dass die Datenbank, die Sie importieren möchten, unberechtigte Elemente auf der Shared Hosting Infrastruktur von OVHcloud enthält. Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen spezialisierten Dienstleister(https://partner.ovhcloud.com/de/). Wir werden Ihnen keine Hilfe bei der Behebung dieser Anomalie bieten können.
+Diese Fehlermeldung bedeutet, dass die Datenbank, die Sie importieren möchten, unberechtigte Elemente auf der Shared Hosting Infrastruktur von OVHcloud enthält. Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/). Wir werden Ihnen keine Hilfe bei der Behebung dieser Anomalie bieten können.
 
-on-success:
+> [!success]
 >
-> Es ist nicht erlaubt, einen **“Trigger“** im Importskript Ihrer Datenbank zu haben. Importieren Sie in diesem Fall Ihre Datenbank auf einen Server [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml).
+> Es ist nicht erlaubt, einen **“Trigger“** im Importskript Ihrer Datenbank zu haben. Importieren Sie in diesem Fall Ihre Datenbank auf einen [SQL Private Server](https://www.ovh.de/hosting/sql-optionen.xml).
 >
 > Außerdem ist folgender Antrag nicht zulässig:
 >
@@ -210,19 +210,19 @@ on-success:
 > **ERROR MySQL server has gone away“**
 >
 
-Diese Fehlermeldung wird bei der [Import einer Datenbank](../Wiederherstellung-Import-Datenbank/#2-Import-einer-lokalen Sicherung) auf einem Server [SQL Private](../erste-schritte-mit-sql-private/) angezeigt. Die Migration hängt meist mit der zu großen Datenmenge zusammen, die importiert werden soll, oder mit einer fehlenden Optimierung der SQL-Anfragen im Importskript.
+Diese Fehlermeldung wird bei der [Import einer Datenbank](../datenbank-importieren/#eine-lokale-sicherung-importieren) auf einem Server [SQL Private](../erste-schritte-mit-sql-private/) angezeigt. Die Migration hängt meist mit der zu großen Datenmenge zusammen, die importiert werden soll, oder mit einer fehlenden Optimierung der SQL-Anfragen im Importskript.
 
 Um diese Anomalie zu beheben können Sie:
 
-- Erhöhung der [Arbeitsspeicherkapazität (RAM)](../konfigurieren-Sie-Ihren-Datenbank-Server/#Den-RAM-Verbrauch überwachen). Gehen Sie hierzu auf den [SQL Private Server](../erste Schritte mit-sql-private/), der im Bereich Datenbanken Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) betroffen ist. Klicken Sie dann auf die Schaltfläche Kfz `...`{.action} im Bereich `RAM`, dann wird der Arbeitsspeicher `RAM-Menge ändern`{.action} bearbeitet.
+- Erhöhung der [Arbeitsspeicherkapazität (RAM)](../konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1). Gehen Sie hierzu auf den [SQL Private Server](../erste-schritte-mit-sql-private/), der im Bereich Datenbanken Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) betroffen ist. Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM`, dann wird der Arbeitsspeicher `RAM-Menge ändern`{.action} bearbeitet.
 
 - Teilen Sie Ihre Datenbank auf, um sie in mehrere Operationen zu importieren und nicht in einen (für alle Fragen zu den durchzuführenden Operationen kontaktieren Sie bitte unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 
-- [Optimieren Sie Ihre Datenbank](../konfigurieren-optimieren-ihres-datenbank-servers/#optimieren-ihrer-datenbanken_1) und wiederholen Sie die Export/Import-Operationen.
+- [Optimieren Sie Ihre Datenbank](../konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren_1) und wiederholen Sie die Export/Import-Operationen.
 
-## Kein Zugriff auf PhpMyAdmin
+### Kein Zugriff auf PhpMyAdmin
 
-### “Access denied for user“
+#### “Access denied for user“
 
 >
 > **“ mysqli::real_connect(): (HY000/1045): Access denied for user“**
@@ -232,17 +232,17 @@ Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank durch [PhpMyAdmin
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-Überprüfen Sie in diesem Fall [die eingegebenen Kennungen überprüfen](../datenbank-verbindung-server-bdd/#in der Praxis) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../datenbank-passwort-ändern/).
+Überprüfen Sie in diesem Fall [die eingegebenen Kennungen überprüfen](../datenbank-verbindung-auf-bdd/#in-der-praktischen-anwendung) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../datenbank-passwort-aendern/).
 
-### “Too many connections“
+#### “Too many connections“
 
 >
-> **“ mysqli_real_connect(): (HY000/1040): Too many connections“**
+> **“mysqli_real_connect(): (HY000/1040): Too many connections“**
 >
 
 Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](https://www.ovh.de/hosting/sql-optionen.xml)) beträgt **30**.
 
-Diese Zahl beträgt **200** für die Datenbanken der Server [SQL Private](../erste Schritte-mit-sql-private/). (Diese Einstellung kann im Bereich Konfiguration {.action} Ihres Datenbankservers geändert werden).
+Diese Zahl beträgt **200** für die Datenbanken der Server [SQL Private](../erste-schritte-mit-sql-private/). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankservers geändert werden).
 
 Diese Nachricht erscheint bei der [Verbindung zu PhpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
 
@@ -253,28 +253,28 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](../konfigurieren-o
 > Wenn Sie Fragen zu den notwendigen Schritten zur Reduzierung der Anzahl aktiver Verbindungen auf Ihrer Datenbank haben, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-### “Name or service not known“
+#### “Name or service not known“
 
 >
-> **“ mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known“**
+> **“mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known“**
 >
 
-Diese Fehlermeldung wird bei der [Verbindung zu PhpMyAdmin](../datenbankverbindung-server-bdd/#in der Praxis) angezeigt, wenn der angegebene Servername nicht korrekt ist.
+Diese Fehlermeldung wird bei der [Verbindung zu PhpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
-Überprüfen Sie den Namen des in Ihrem [OVHcloud Kundencenter] zu registrierenden Servers(https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Überprüfen Sie den Namen des Servers in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu registrierenden.
 
 > [!success]
 >
-> Wenn die Datenbank, mit der Sie sich verbinden möchten, im Tab Datenbanken {.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) steht, wird der Name, der angegeben werden soll, in der Spalte Serveradresse angegeben.
+> Wenn die Datenbank, mit der Sie sich verbinden möchten, im Tab `Datenbanken`{.action} in `Web Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) steht, wird der Name, der angegeben werden soll, in der Spalte `Server-Adresse` angegeben.
 >
-> Wenn Sie sich mit einer Datenbank auf einem Server verbinden möchten (SQL Private)(../erste-schritte-mit-sql-private/), wird der einzugebende Server im Tab Allgemeine Informationen {.action}, Teil Verbindungsinformationen {.action}, SQL {.action} und im Bereich Hostname {.action}.
+> Wenn Sie sich mit einer Datenbank auf einem Server verbinden möchten [SQL Private](../erste-schritte-mit-sql-private/), wird der einzugebende Server im Tab `Allgemeine Informationen`{.action}, Teil `Verbindungsinformationen`{.action}, `SQL`{.action} und im Bereich `Hostname`{.action}.
 >
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[erste Schritte mit dem SQL Private](../erste Schritte mit-sql-private/)
+[erste Schritte mit dem SQL Private](../erste-schritte-mit-sql-private/)
 
 Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
 
