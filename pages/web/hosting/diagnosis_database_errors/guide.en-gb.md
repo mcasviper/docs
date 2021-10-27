@@ -66,13 +66,13 @@ If this is a WordPress site, open the file "wp-config.php".
 
 ```php
 define('DB_NAME', 'my_database');
-
+ 
 /** MySQL database username */
 define('DB_USER', 'my_user');
-
+ 
 /** MySQL database password */
 define('DB_PASSWORD', 'my_password');
-
+ 
 /** MySQL hostname */
 define('DB_HOST', 'my_server.mysql.db:port');
 ```
@@ -82,7 +82,7 @@ In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fr
 - **my_database** must match what is noted as `Database name`;
 - **my_user** must match what is noted as `User name`;
 - **my_password** corresponds to your [database password](../change-password-database/);
-- **my_server.mysql.db** must match what is noted as `Server address`.
+- **my_server.mysql.db** must match the `Server address`.
 
 > [!primary]
 >
@@ -116,7 +116,7 @@ To upgrade your subscription, log in to your [OVHcloud Control Panel](https://ww
 
 If you are already subscribing to a **Performance** offer, refer to [method 2](#method2).
 
-#### Method 2: Migrate your data to a larger database <a name="method2"></a>
+#### Method 2: Migrate your data to a larger database <a name=""method2"></a>
 
 You can also migrate your data to a new database:
 
@@ -213,7 +213,7 @@ To resolve this issue, you can use the following methods:
 
 - Increase the [amount of RAM](../configure-optimise-database-server/#modifying-the-database-server-solution_1): go to the [Private SQL server](../getting started-with-private-sql/) concerned in the `Databases` section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
-- Split your database, in order to import it through multiple operations instead of one. (For any questions necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/). We will not be able to assist you with this.)
+- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/). We will not be able to assist you with this.)
 
 - [Optimise your database](../configure-optimise-database-server/#managing-your-databases_1), then repeat the export/import operations.
 
@@ -266,12 +266,12 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 >
 > If the database you would like to connect to appears in the `Databases`{.action} tab of the `Hosting plans`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), the name to enter is in the `Server address` column.
 >
-> If you want to connect to a database on a [Private SQL server](../getting-started-with-private-sql/), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
+> If you want to connect to a database on a [Private SQL server](../getting started-with-private-sql/), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
 >
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with Private SQL](../getting-started-with-private-sql/)
+[Getting started with Private SQL](../getting started-with-private-sql/)
 
 [Resolving the most common 1-click module errors](../error-frequently-1-click-modules/)
 
