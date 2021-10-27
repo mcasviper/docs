@@ -1,30 +1,34 @@
 ---
 title: Rozwiąż najczęstsze błędy związane z bazami danych 
-excerpt "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
+excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
 slug: blad-baz-danych
 section: Diagnostyka
-order 4
+order: 4
 ---
 
-Ostatnia aktualizacja z dnia 29-08-2021
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-Cel**
+**Ostatnia aktualizacja z dnia 08/10/2021**
 
-Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), jak również w interfejsie [PhpMyAdmin](../creer-bazy-danych/#acceder-a-interfejs-phpmyadmin).
+## Wprowadzenie
+
+Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), jak również w interfejsie [phpMyAdmin](../creer-bazy-danych/#acceder-a-interfejs-phpmyadmin).
 
 **Dowiedz się, jak usunąć błędy związane z bazami danych na hostingu www OVHcloud.**
 
-Warning
+> [!warning]
 >
-> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy specjalisty lub kontakt z producentem programu lub interfejsu. Niestety OVH nie jest w stanie udzielić Ci wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#idź dalej) niniejszego przewodnika.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
-Wymagania początkowe
+## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovh.com/fr/hebergement-web/) OVHcloud
-https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovh.com/fr/hebergement-web/options-sql.xml), [SQL prywatny](../pierwsze-kroki-z-sql-prive/) lub [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
 
 W praktyce
