@@ -183,7 +183,7 @@ Vous pouvez également cocher la case `Vider la base de données actuelle`{.acti
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
- Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
+Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
 > [!faq]
 >
