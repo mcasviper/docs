@@ -41,7 +41,7 @@ Vérifiez tout d'abord sur [http://travaux.ovh.com/](http://travaux.ovh.com/) qu
 >
 > - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action} dans le menu de gauche, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
 > - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
-> - Pour retrouver le nom de votre serveur **Private SQL**, cliquez sur `Bases de données`{.action} dans le menu de gauche puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations générales`{.action}.
+> - Pour retrouver le nom de votre serveur **Private SQL**, cliquez sur `Bases de données`{.action} dans le menu de gauche puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
 >
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
@@ -102,7 +102,7 @@ Trois méthodes vous permettront de débloquer votre base de données :
 
 #### Méthode 1 : passer votre abonnement sur une offre supérieure
 
-Si vous disposez d'une formule **Perso2014** ou **Pro2014**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovh.com/fr/hebergement-web/). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
+Si vous disposez d'une formule **Perso** ou **Pro**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovh.com/fr/hebergement-web/). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
 
 > [!warning]
 >
@@ -215,7 +215,7 @@ Ce message d'erreur apparaît lors de [l'import d'une base de données](../resta
 
 Pour résoudre cette anomalie, vous pouvez :
 
-- Augmenter la [quantité de mémoire vive (RAM)](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur SQL privé](../premiers-pas-avec-sql-prive/) concerné dans la rubrique `Bases de données` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
+- Augmenter la [quantité de mémoire vive (RAM)](../configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur SQL privé](../premiers-pas-avec-sql-prive/) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
 - Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
@@ -243,7 +243,7 @@ Dans cette situation, [vérifiez les identifiants renseignés](../connexion-base
 
 Le nombre maximal de connexions actives pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml)) est de **30**.
 
-Ce nombre est de **200** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/). (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
+Ce nombre est de **200** pour les bases des serveurs [SQL privé](../premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/)  (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](../creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
