@@ -14,7 +14,7 @@ order: 4
 
 ## Ziel
 
-Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sowie im [phpMyAdmin Interface](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt.
+Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sowie im [phpMyAdmin Interface](../datenbank-erstellen/#auf-das-phpMyAdmin-interface-zugreifen) angezeigt.
 
 **Diese Anleitung erklärt, wie Sie Fehler bei der Verwendung von Datenbanken mit OVHcloud Webhostings beheben können.**
 
@@ -58,7 +58,7 @@ Verbinden Sie sich über [FTP](../verbindung-ftp-speicher-webhosting/) mit dem H
 > Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](../webhosting_installation_von_webhosting-modulen/) heranzuziehen oder bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsdaten zu [phpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
+Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsdaten zu [phpMyAdmin](../datenbank-erstellen/#auf-das-phpMyAdmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
 
 Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](../datenbank-passwort-aendern/).
 
@@ -135,7 +135,7 @@ Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
 #### Methode 3: Unnötige Daten löschen
 
-Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](../webhosting_hilfe_zum_export_von_datenbanken/) über [phpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
+Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](../webhosting_hilfe_zum_export_von_datenbanken/) über [phpMyAdmin](../datenbank-erstellen/#auf-das-phpMyAdmin-interface-zugreifen) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
 
 Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
 
@@ -230,7 +230,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt werden. Sie gibt an, dass die eingegebenen Login-Daten falsch sind.
+Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](../datenbank-erstellen/#auf-das-phpMyAdmin-interface-zugreifen) angezeigt werden. Sie gibt an, dass die eingegebenen Login-Daten falsch sind.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
@@ -246,7 +246,7 @@ Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Ange
 
 Diese Zahl erhöht sich auf **200** für Datenbanken auf [SQL Private](../erste-schritte-mit-sql-private/). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
 
-Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
+Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](../datenbank-erstellen/#auf-das-phpMyAdmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
 
 In dieser Situation müssen Sie [Ihre Datenbanken optimieren](../konfigurieren-optimieren-ihres-datenbank-servers/#optimieren-ihrer-datenbanken_1), um die Anzahl der aktiven Verbindungen zu reduzieren.
 
@@ -261,7 +261,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](../konfigurieren-o
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](../datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
+Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](../datenbank-erstellen/#auf-das-phpMyAdmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 

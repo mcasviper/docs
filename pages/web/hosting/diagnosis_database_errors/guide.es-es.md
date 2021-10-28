@@ -106,7 +106,7 @@ Desbloquee la base de datos de tres formas distintas:
 
 #### Método 1: cambiar la suscripción a un plan superior
 
-Si dispone de una fórmula **Personal** o **Professional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovh.es/hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
+Si dispone de una fórmula **Personal** o **Profesional**, le recomendamos que cambie a [plan de hosting superior](https://www.ovh.es/hosting/). Este cambio de suscripción aumentará el tamaño de la base de datos, lo que la reabrirá automáticamente. Este método es el más sencillo y no necesita conocimientos técnicos específicos.
 
 > [!warning]
 >
@@ -191,7 +191,9 @@ Este mensaje de error significa que la base de datos que está intentando import
 
 > [!faq]
 >
-> Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml).
+> ¿Qué elementos del script de importación de mi base de datos pueden causar un error "#1044 - Access denied for user to database"?
+
+Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml).
 
 Por otro lado, no está permitida la siguiente petición:
 
