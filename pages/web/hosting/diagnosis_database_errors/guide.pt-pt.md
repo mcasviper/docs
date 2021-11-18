@@ -14,7 +14,7 @@ order: 4
 
 **Objetivo**
 
-A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), bem como na interface [PhpMyAdmin](../criar-base-de-dados/#aceder-a-interface-phpmyadmin).
+A utilização das suas bases de dados pode dar origem a um certo número de anomalias no seu site ou no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), bem como na interface [phpMyAdmin](../criar-base-de-dados/#aceder-a-interface-phpmyadmin).
 
 **Descubra como resolver os erros associados às bases de dados sobre os alojamentos partilhados OVHcloud.**
 

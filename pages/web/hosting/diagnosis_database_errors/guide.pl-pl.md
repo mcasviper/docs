@@ -14,7 +14,7 @@ order: 4
 
 ## Wprowadzenie
 
-Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak również w interfejsie [phpMyAdmin](../creer-bazy-danych/#acceder-a-interfejs-phpmyadmin).
+Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej stronie WWW lub w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak również w interfejsie [phpMyAdmin](../tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin).
 
 **Dowiedz się, jak usunąć błędy związane z bazami danych na hostingu www OVHcloud.**
 
@@ -119,9 +119,9 @@ Jeśli posiadasz wzór **Personal** lub **Pro**, w tej sytuacji zalecamy przejś
 
 W celu dokonania tej zmiany zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie kliknij przycisk `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Kliknij przycisk `...`{.action} w rubryce `Pakiet` po prawej stronie ekranu, a następnie kliknij `Zmień ofertę`{.action}.
 
-Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
+Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#method2).
 
-#### Metoda 2: migracja danych na wyższą bazę danych <a name="methode2"></a>
+#### Metoda 2: migracja danych na wyższą bazę danych <a name="method2"></a>
 
 Możesz również przenieść dane na nową bazę:
 
@@ -217,11 +217,11 @@ Aby usunąć tę anomalię, możesz:
 
 - Zwiększyć [ilość pamięci RAM](../konfiguracja-optymalizacja-serwera-bazy-danych/#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [prywatny serwer SQL](../pierwsze-kroki-private-sql/) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
 
-- Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.)
+- Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.
 
 - [Zoptymalizuj bazę danych](../konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), a następnie powtórzyć operacje eksportu / importu.
 
-### Nie można uzyskać dostępu do PhpMyAdmin
+### Nie można uzyskać dostępu do phpMyAdmin
 
 #### "Access denied for user"
 
